@@ -1,3 +1,17 @@
+@charset "utf-8";
+
 h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
+[hidden] {
+  display: none !important;
+}
+img{
+  border: 0;
+  max-width: 100% !important;
+  vertical-align: middle;
+  height: auto;
+  display: block;
+}
+
+
