@@ -3,6 +3,9 @@
 html{
   overflow: auto;
 }
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+}
 [hidden] {
   display: none !important;
 }
@@ -13,8 +16,21 @@ img{
   height: auto;
   display: block;
 }
-.page-header{
+.header{
+  position: absolute;
+  top: 20px;
+  height: 70px;
+  width: 100%;
   color: #4169e1;
+  border-style:none none solid;
+  border-color:black;
+  border-width:thin;
+}
+.main{
+  position:absolute;
+  top:90px;
+  bottom: 50px;
+  width:100%;
 }
 a{
   color: #3cb371;
@@ -30,8 +46,5 @@ a{
   border-style:double none none;
 }
 .fotter p{
-  text-align: center;
-}
-p,h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
