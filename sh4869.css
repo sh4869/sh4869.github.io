@@ -41,8 +41,6 @@ a{
   height: 50px;
   width:100%;
   padding:0px;
-//  background:-moz-linear-gradient(top,#fff,rgba(135,206,250,0.5));
-//  background:-webkit-gradient(linear,left top,left bottom,from(#fff),to(rgba(135,206,250,0.5)));  
   border-style:double none none;
 }
 .footer p{
