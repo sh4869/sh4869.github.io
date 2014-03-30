@@ -23,7 +23,7 @@ img{
   width: 100%;
   color: #4169e1;
   border-style:none none solid;
-  border-color:black;
+  border-color:cyan; 
   border-width:thin;
 }
 .main{
@@ -31,6 +31,14 @@ img{
   top:90px;
   bottom: 50px;
   width:100%;
+  //right:50px;
+}
+.twitter{
+  position:absolute;
+  bottom:50px;
+  top:150px;
+  right:0%;
+  height:auto;
 }
 a{
   color: #3cb371;
