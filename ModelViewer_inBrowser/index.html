@@ -1,0 +1,82 @@
+<HTML>
+  <head>
+	<title>My first Three.js app</title>
+	<script type="text/javascript">
+	  document.onkeydown = function(e) {
+
+		if (e != null) {
+		  keycode = e.which;
+		  e.preventDefault();
+		  e.stopPropagation();
+		  // Internet Explorer
+		}else{
+		  keycode = event.keyCode;
+		  event.returnValue = false;
+		  event.cancelBubble = true;
+		}
+
+		switch (keycode){
+		  case 40:
+			mesh.rotation.x += 0.1;
+			break;
+		  case 38:
+			mesh.rotation.x -= 0.1;
+			break;
+		  case 37:
+			mesh.rotation.y += 0.1;
+			break;
+		  case 39:
+			mesh.rotation.y -= 0.1;
+			break;		
+		  case 90:
+			camera.position.z -= 10;
+			break;
+		  case 66:
+			camera.position.z += 10;
+			break;
+		} 
+
+	  }
+	</script>
+	<style>canvas { width: 90%; height: 90% }</style>
+  </head>
+  <body>
+	<script src="js/three.min.js"></script>
+	<script>
+	  var camera, scene, renderer;
+	  var geometry, material, mesh;
+
+	  init();
+	  animate();
+
+	  function init() {
+
+		camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+		camera.position.z = 1000;
+
+		scene = new THREE.Scene();
+
+		geometry = new THREE.BoxGeometry( 200, 200, 200 );
+		material = new THREE.MeshBasicMaterial( { 
+		  color: 0xffff00,
+				 wireframe: true,
+		} );
+
+		mesh = new THREE.Mesh( geometry, material );
+		scene.add( mesh );
+
+		renderer = new THREE.CanvasRenderer();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+
+		document.body.appendChild( renderer.domElement );
+
+	  }
+
+function animate() {
+  requestAnimationFrame( animate );
+  renderer.render( scene, camera );
+}
+	</script>
+	<p>z: zoom / b: back </p>
+  </body>
+</HTML>
