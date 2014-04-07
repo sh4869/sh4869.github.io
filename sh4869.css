@@ -19,15 +19,8 @@ img{
 a{
   color: #3cb371;
 }
-.footer{
-  position: absolute;
-  bottom: 0px;
-  height: 40px;
-  width:100%;
-  padding:0px;
+footer{
   border-style:double none none;
-}
-.footer p{
   text-align: center;
 }
 .hatena{
