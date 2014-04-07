@@ -20,6 +20,8 @@ a{
   color: #3cb371;
 }
 footer{
+  position: relative;
+  bottom: 0px;
   border-style:double none none;
   text-align: center;
 }
