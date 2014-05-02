@@ -19,10 +19,13 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/icon.png">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.zrssfeed.js"></script>
+	<script src="jquery.vticker.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	  $(function(){
 		$('#feed').rssfeed('http://sh4869.hatenablog.com/rss',{
-		  limit: 3
+		  limit: 8,
+		  content: false,
+		  titletag: 'h6',
 		  });
 	  });
 	</script>
@@ -68,10 +71,11 @@
 	  <hr />
 	  <div class="one-third column">
 		<h3>Tweet</h3>
-		<a class="twitter-timeline" href="https://twitter.com/sh4869sh" data-widget-id="415121952051699712">@sh4869sh からのツイート</a>
+		<a class="twitter-timeline" href="https://twitter.com/sh4869sh" height="500px"  data-widget-id="415121952051699712">@sh4869sh からのツイート</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	  </div>
 	  <div class="one-third column">
+		<h3>RSS - Blog</h3>
 		<div id="feed"></div>
 	  </div>
 	</div>
