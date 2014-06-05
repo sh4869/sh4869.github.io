@@ -19,15 +19,23 @@
 	<!-- JQuery RSS Plugin -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.feeds.min.js"></script>
+	<script type="text/javascript" src="js/jquery.transit.min.js"></script> 	
 	<script type="text/javascript">
 	  $(function(){
 		$('.feed').feeds({
 		  feeds:{
 			feed1:'http://sh4869.hatenablog.com/rss',
-		    feed2:'http://qiita.com/users/sh4869/feed.atom'
+		feed2:'http://qiita.com/users/sh4869/feed.atom'
 		  },
 		max:4
-		  });
+		});
+	  });
+      $(function(){
+		$('.title').transition({
+		  //perspective:'100px',
+		  //rotateY:'180deg'
+		 x:'320px' 
+		},1000,'linear');
 	  });
 	</script>
 
@@ -36,7 +44,7 @@
 
 	<div class="container">
 
-	  <div class="sixteen columns" >
+	  <div class="sixteen columns title" >
 		<h1 class="remove-bottom" style="margin-top: 40px">sh4869.net</h1>
 		<h5>面白いことを。</h5>
 	  </div>
@@ -59,18 +67,18 @@
 		<ul class="circle">
 		  <li>
 			<p><a href="https://github.com/sh4869/update_name" target="_blank">update name</a> 
-			- Change username of twitter by reply.  Written by Ruby.</p>
+			  - Change username of twitter by reply.  Written by Ruby.</p>
 		  </li>
 		  <li>
 			<p><a href="https://github.com/sh4869/Delete_BH_of_Twitter" target="_blank">Delete BH of Twitter</a> 
-			- Delete dark history of Twitter using private word</p>
+			  - Delete dark history of Twitter using private word</p>
 		  </li>
 		</ul>
-        <h5>Now develop</h5>
-		 <ul class="circle">
+		<h5>Now develop</h5>
+		<ul class="circle">
 		  <li>
 			<p><a href="https://github.com/sh4869/ModelViewer_inBrowser/" target="_blank">Model viewer in Browser</a> 
-			- See 3D Model in Browser Using three.js</p>
+			  - See 3D Model in Browser Using three.js</p>
 		  </li>
 		</ul>
 	  </div>
@@ -101,7 +109,7 @@
 		<div class="feed"></div>
 	  </div>
 
-      <div class="one-third columns">
+	  <div class="one-third columns">
 		<h3>News</h3>
 		<p>2014/5/10 まだ生きてる</p>
 		<br>
