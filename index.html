@@ -18,17 +18,21 @@
 
 	<!-- JQuery RSS Plugin -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.feeds.min.js"></script>
-	<script type="text/javascript" src="js/jquery.transit.min.js"></script> 	
+	<script type="text/javascript" src="js/jquery.zrssfeed.min.js"></script>
 	<script type="text/javascript">
-	  $(function(){
-		$('.feed').feeds({
-		  feeds:{
-			feed1:'http://sh4869.hatenablog.com/rss',
-		feed2:'http://qiita.com/users/sh4869/feed.atom'
-		  },
-		max:4
-		});
+	  $(document).ready(function () {
+		$('#blog').rssfeed('http://sh4869.hatenablog.com/rss', {
+		  limit: 5,
+		  content:false,
+		  titletag:"h6"
+		  });
+	  });
+	  $(document).ready(function () {
+		$('#qiita').rssfeed('http://qiita.com/users/sh4869/feed.atom', {
+		  limit: 7,
+		  content:false,
+		  titletag:"h6"
+		  });
 	  });
 	</script>
 
@@ -48,11 +52,10 @@
 		<h3>Biograpy</h3>
 		<ul class="square">
 		  <li><strong>Handle</strong>:sh4869</li>
-		  <Li><strong>Address</strong>:Tokyo,Itabashi</li>
+		  <Li><strong>Address</strong>:Tokyo</li>
 		  <li><strong>Birth</strong>09/17</li>
-		  <li><strong>Learning</strong>:Arduino,Ruby(Qt,Android app,Information Engineering,Dart,Three.js)</li> 
+		  <li><strong>Learning</strong>:Arduino,Ruby,Dart</li> 
 		  <li><strong>Email</strong>:nobuk4869@gmail.com</li>
-		  <li><strong>hobby</strong>:listen music,write novel</li>
 		</ul>
 	  </div>
 	  <div class="one-third column">
@@ -98,16 +101,11 @@
 	  </div>
 	  <div class="one-third column">
 		<h3>RSS - Blog</h3>
-		<div class="feed"></div>
+		<div id="blog"></div>
+		<h3>Qiita</h3>
+		<div id="qiita"></div>
 	  </div>
 
-	  <div class="one-third columns">
-		<h3>News</h3>
-		<p>2014/5/10 まだ生きてる</p>
-		<br>
-		<h3>Kampa</h3>
-		<script src="http://kampa.me/t/enr.js"></script>
-	  </div>
 	</div>
 
   </body>
