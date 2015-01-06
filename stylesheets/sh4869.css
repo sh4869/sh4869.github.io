@@ -1,8 +1,11 @@
 .title{
 	text-align:center;
-  font-size: 3.5rem;
 }
-@media (min-width: 550px){
+.icon-list{
+	list-style-type:none;
+}
+
+@media (min-width: 400px){
 	.title{
 		font-size:3.5rem;
 	}
