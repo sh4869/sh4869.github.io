@@ -3,6 +3,7 @@
 }
 .icon-list{
 	list-style-type:none;
+	font-size:1.6rem
 }
 
 @media (min-width: 400px){
