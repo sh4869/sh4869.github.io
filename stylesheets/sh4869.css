@@ -27,7 +27,7 @@ a:hover {
 }
 
 hr {
-	margin: 2rem 0 2rem 0;
+	margin: 2rem 0 2rem;
 }
 @media (min-width: 400px){
 	.title{
@@ -37,5 +37,6 @@ hr {
 @media (max-width:400px) {
 	.title{
 		font-size: 3.0rem;
+	}
 }
 
