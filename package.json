@@ -1,0 +1,36 @@
+{
+  "name": "sh4869.github.io",
+  "version": "1.0.0",
+  "description": "sh4869.net",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gulp build && node scripts/deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh4869/sh4869.github.io.git"
+  },
+  "author": "sh4869",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sh4869/sh4869.github.io/issues"
+  },
+  "homepage": "https://github.com/sh4869/sh4869.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.5.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1",
+    "path": "^0.12.7",
+    "run-sequence": "^1.2.2",
+    "sass-module-importer": "^1.4.0"
+  }
+}

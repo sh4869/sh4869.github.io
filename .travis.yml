@@ -1,0 +1,7 @@
+language: node_js
+node_js: 6.3.0
+sudo: false
+script:
+- echo Hello,World!
+after_success:
+- '[ "$TRAVIS_BRANCH" == "source" ] && npm run deploy'
