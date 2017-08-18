@@ -18,13 +18,13 @@ gulp.task('pug', () => {
         }))
         .pipe(data(
             (file) => {
-                const dirname = __dirname + "/www/datas/";
+                const dirname = __dirname + "/www/data/";
                 const files = fs.readdirSync(dirname);
-                let datas = {};
+                let data = {};
                 files.forEach((name) => {
-                    datas[name.replace(".json", "")] = JSON.parse(fs.readFileSync(dirname + name));
+                    data[name.replace(".json", "")] = JSON.parse(fs.readFileSync(dirname + name));
                 });
-                return { data: datas };
+                return { data: data };
             })
         )
         .pipe(pug({ pretty: true }))
@@ -77,7 +77,7 @@ gulp.task("build", ["img", "pug", "css","font","cname","favicon"], () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch(["www/pug/**/*.pug","www/datas/**/*.json"], ["pug"]);
+    gulp.watch(["www/pug/**/*.pug","www/data/**/*.json"], ["pug"]);
     gulp.watch(["www/scss/**/*.scss"], ["css"]);
     gulp.watch(["www/img/**/*.png", "www/img/**/*.jpg"], ["img"])
 })
