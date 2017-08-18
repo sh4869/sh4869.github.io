@@ -2,7 +2,7 @@ const ghpages = require("gh-pages");
 const path = require("path");
 
 const GH_TOKEN = process.env.GH_TOKEN;
-const repo = "@gihthub.com/sh4869/sh4869.github.io"
+const repo = "@github.com/sh4869/sh4869.github.io"
 ghpages.publish(
     path.join(__dirname, '..', 'dest'),
     {
