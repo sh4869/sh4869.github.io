@@ -1,0 +1,32 @@
+[
+    {
+        "title":"Think Web",
+        "url": "https://techbooster.booth.pm/items/488347",
+        "info": {
+            "org": "Tech Booster",
+            "org_url":"http://techbooster.org/",
+            "date": "2017/04(技術書展2)",
+            "description": "Flutterではじめるモバイルアプリ開発"
+        }
+    },
+    {
+        "title":"VRの本",
+        "url": "https://power-halation.github.io/#works",
+        "info": {
+            "org": "Power Halation",
+            "org_url": "https://power-halation.github.io/",
+            "date": "2016/12(コミックマーケット91)",
+            "description": "破壊検知の話"
+        }
+    },
+    {
+        "title":"Digicre Tech Book",
+        "url": "http://c91.digicre.net/#teckbook",
+        "info": {
+            "org":"デジクリ",
+            "org_url": "http://digicre.net",
+            "date": "2016/12(コミックマーケット91)",
+            "description": "React+Cordovaによるアプリ開発"
+        }
+    }
+]
