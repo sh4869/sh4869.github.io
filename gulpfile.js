@@ -50,16 +50,6 @@ gulp.task("css", () => {
         .pipe(connect.reload());
 });
 
-gulp.task("font",() => {
-    return gulp.src("node_modules/font-awesome/fonts/*")
-        .pipe(gulp.dest("dest/fonts/"));
-});
-
-gulp.task("favicon",() => {
-    return gulp.src("www/favicon/*")
-        .pipe(gulp.dest("dest/favicon/"));
-})
-
 gulp.task("cname",() => {
     return gulp.src("www/CNAME")
         .pipe(gulp.dest("dest/"));
@@ -72,7 +62,7 @@ gulp.task("server",() =>{
     });
 });
 
-gulp.task("build", ["img", "pug", "css","font","cname","favicon"], () => {
+gulp.task("build", ["img", "pug", "css","cname"], () => {
 
 });
 
