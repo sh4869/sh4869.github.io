@@ -7,8 +7,9 @@ html(lang='ja')
     meta(name='author', content='sh4869')
     meta(name='keywords', content='sh4869,4869,@sh4869sh')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.8/css/all.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css')
     link(rel='stylesheet', href='css/index.css')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     // Favicons
     link(rel='apple-touch-icon', sizes='180x180', href='/imgs/icons/apple-touch-icon.png')
     link(rel='icon', type='image/png', sizes='32x32', href='/imgs/icons/favicon-32x32.png')
@@ -28,172 +29,115 @@ html(lang='ja')
       ga('create', 'UA-46319605-10', 'auto');
       ga('send', 'pageview');
   body
-    section.section
-      .container
-        .tile.is-ancestor
-          .tile.is-vertical.is-8
-            .tile
-              .tile.is-parent.is-vertical
-                article.tile.is-child.notification.is-dark.text-center
-                  h1.title.is-spaced.is-1 sh4869.net
-                artilce.tile.is-child.notification.is-info
-                  figure.image.is-1by1
-                    image(src="imgs/icon.png")
-              .tile.is-parent.is-vertical
-                article.tile.is-child.notification.is-info
-                  h1.title.is-spaced.is-2
-                    span.icon.is-large
-                      i.fa.fa-user
-                    | NAME
-                  .title.is-3 Nobuhiro Kasai
-                article.tile.is-child.notification.is-primary
-                  h1.title.is-spaced.is-2 
-                    span.icon.is-large
-                      i.fa.fa-map-marker
-                    | ADDRESS
-                  .title.is-3 Tokyo,Japan
-                aritcle.tile.is-child.notification.is-success
-                  h1.title.is-spaced.is-2
-                    span.icon.is-large
-                      i.fa.fa-at
-                    | HANDLE
-                  .title.is-3 sh4869
-          .tile.is-parent.is-vertical
-            article.tile.is-child.notification.is-warning
-              h1.title.is-spaced.is-2 
-                span.icon.is-large
-                  i.fa.fa-cog
-                | SKILL
-              .title.is-5 Programming Language
-              .content.is-medium
-                ul
-                  li Dartlang,TypeScript,Ruby
-                  li C++,Ruby,Java,Go
-              .title.is-5 Programming Genre
-              .content.is-medium
-                ul
-                  li Web Frontend
-                  li Robotics
-              .title.is-5 Others
-              .content.is-medium
-                ul
-                  li Web Design
-                  li Education of Programming
-        .tile.is-vertical.is-ancestor
-          .tile.is-parent
-            article.tile.is-child.notification.is-danger
-              h1.title.is-spaced.is-2
-                sapn.icon.is-large
-                  i.fa.fa-graduation-cap
-                |  EDUCATION
-              .title.is-3 2016~
-              .subtitle.is-5.is-spaced Shibaura Institute of Technology Engineering,Information Science and Engineering
-              .title.is-3 2013~2016
-              .subtitle.is-5.is-spaced Tokyo Tech High School of Science and Technology Information Systems
-        .tile.is-ancestor
-          .tile.is-6
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-primary
-                  h1.title.is-spaced.is-2
-                    span.icon.is-large
-                      i.fa.fa-pencil
-                    | CONTRIBUTIONS
-                  each contribution in data.contribution
-                    a(href!=contribution.url,target="_blank")
-                      h1.title.is-spaced.is-4!= contribution.title
-                    .content.is-medium
-                      ul
-                        li!= contribution.info.date
-                        li!= contribution.info.description
-                        li
-                          a(href!=contribution.info.org_url,target="_blank")
-                            != contribution.info.org
-          .tile.is-6
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-info
-                  h1.title.is-spaced.is-2
-                    span.icon.is-large
-                      i.fa.fa-wrench
-                    | WORKS
-                  each work in data.works
-                    a(href!=work.url,target="_blank")
-                      h1.title.is-spaced.is-3!= work.title
-                    .content.is-medium
-                      ul
-                        li!= work.description
-        .tile.is-ancestor
-          .tile.is-3.is-vertical
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-info.text-center
-                  a(href="https://facebook.com/sh4869",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-facebook
-                      |  FACEBOOK
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-danger.text-center
-                  a(href="http://last.fm/user/sh4869",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-lastfm
-                      |  LAST.FM
-          .tile.is-3.is-vertical
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-light.text-center
-                  a(href="https://github.com/sh4869",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.icon.is-large
-                        i.fa.fa-github
-                      |  GITHUB
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-success.text-center
-                  a(href="https://www.amazon.co.jp/registry/wishlist/PADZ1KX67KDC/ref=cm_sw_r_tw_ws_gZp5sb1FYPSRY",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-gift
-                      |  WISHLIST
-          .tile.is-3.is-vertical
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-primary.text-center
-                  a(href="https://twitter.com/sh4869sh/",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-twitter
-                      |  TWITTER
-            .title
-              .tile.is-parent
-                article.tile.is-child.notification.is-warning.text-center
-                  a(href="http://tumblr.sh4869.net/",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-tumblr
-                      |  TUMBLR
-          .tile.is-3.is-vertical
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.is-dark.text-center
-                  a(href="http://sh4869.hatenablog.com",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-rss
-                      |  BLOG
-            .tile
-              .tile.is-parent
-                article.tile.is-child.notification.white.text-center
-                  a(href="https://bitbucket.org/sh4869/",target="_blank")
-                    h1.title.is-spaced.is-2 
-                      span.iconn.is-large
-                        i.fa.fa-bitbucket
-                      |  BITBUCKET
-        .tile.is-ancestor
-          .tile.is-parent
-              article.tile.is-child.notification.is-dark.text-center
-                h1.title.is-spaced.is-2 
-                  | &copy; 2017 sh4869,Nobuhiro Kasai All Rights Reserved
+    .container
+      .row.top
+        h1 sh4869.net
+      .row.biography
+        .six.columns
+          h2.minititle Biography
+          .description
+            .item
+              p.title Name
+              p.content Nobuhiro Kasai
+            .item
+              p.title Birthday
+              p.content 1997/09/17
+            .item
+              p.title Address
+              p.content Tokyo,Japan
+            .item
+              p.title Handle
+              p.content sh4869,sh4869sh
+        .six.columns
+          h2.minititle Affiliation
+          table.u-full-width
+            thead
+              tr
+                th Year
+                th organization
+            tbody
+              tr
+                td 2016/04 - 
+                td Shibaura Institute of Technology
+              tr
+                td 2013/03 - 2016/03
+                td Tokyo Tech High School of Science and Technology
+      .row.skills
+        .six.columns
+          h2.minititle Skill
+          .description
+            .item
+              p.title Programming Language
+              p.content C++,Dartlang,Go,Java,Ruby,TypeScript
+            .item
+              p.title Genre
+              p.content Web Frontend,Robotics(a little),Web Design
+            .item
+              p.title Others
+              p.content Git,Linux,LaTeX
+        .six.columns
+          h2.minititle Works
+          .description
+            each work in data.works
+              .item
+                a(href=work.url)
+                  p.title= work.title
+                p.content= work.description
+      .row.announcement
+        .six.columns
+          h2.minititle Contribution
+          table.ul-full-width
+            thead
+              tr
+                th Book Title
+                th Organization
+                th Date
+                th Content
+            tbody
+              each one in data.contribution
+                tr
+                  td
+                    a(href=one.url)= one.title
+                  td
+                    a(href=one.info.org_url)= one.info.org
+                  td= one.info.date
+                  td= one.info.description
+        .six.columns
+          h2.minititle Presentation
+          p WIP
+      .row.link
+        .six.columns
+          h2.minititle Link
+          .content
+            p.with-icon
+              i.fab.fa-github 
+              a(href="https://github.com/sh4869") GitHub
+            p.with-icon
+              i.fas.fa-rss 
+              a(href="https://blog.sh4869.net") Blog (Tech)
+            p.with-icon
+              i.fas.fa-rss-square
+              a(href="http://sh4869.hatenablog.com") Blog (Others)
+            p.with-icon
+              i.fas.fa-sticky-note
+              a(href="https://scrapbox.io/sh4869") Wiki (ScrapBox)
+            p.with-icon
+              i.fas.fa-gift
+              a(href="https://www.amazon.co.jp/registry/wishlist/PADZ1KX67KDC/ref=cm_sw_r_tw_ws_gZp5sb1FYPSRY") Withlist
+        .six.columns
+          h2.minititle Contact
+          .content
+            p.with-icon
+              i.fas.fa-envelope
+              a(href="mailto:nobuk4869@gmail.com") nobuk4869@gmail.com
+            p.with-icon
+              i.fab.fa-twitter
+              a(href="https://twitter.com/sh4869sh") @sh4869sh
+            p.with-icon
+              i.fab.fa-facebook
+              a(href="https://facebook.com/sh4869") Nobuhiro Kasai
+            
+            
+
+      .row.footer
+        p &copy; 2018 sh4869,Nobuhiro Kasai All Rights Reserved

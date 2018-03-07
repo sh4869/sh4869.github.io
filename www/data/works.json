@@ -10,13 +10,13 @@
         "description": "Navigation Application made with React and Cordova"
     },
     {
-        "title": "Digicre WebPage",
-        "url": "http://digicre.net",
-        "description":"Digicre WebPage"
-    },
-    {
         "title":"J-REPO Web Page",
         "url":"http://j-repo.com",
-        "description":"Japan Robotics Education Promotional Organization Web Page"
+        "description":"J-REPO Web Page"
+    },
+    {
+        "title":"C language Course",
+        "url":"http://sh4869.net/CLangCourse/",
+        "description":"C Language Course"
     }
 ]

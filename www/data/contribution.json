@@ -5,7 +5,7 @@
         "info": {
             "org": "Tech Booster",
             "org_url":"http://techbooster.org/",
-            "date": "2017/04(技術書展2)",
+            "date": "2017/04",
             "description": "Flutterではじめるモバイルアプリ開発"
         }
     },
@@ -15,7 +15,7 @@
         "info": {
             "org": "Power Halation",
             "org_url": "https://power-halation.github.io/",
-            "date": "2016/12(コミックマーケット91)",
+            "date": "2016/12",
             "description": "破壊検知の話"
         }
     },
@@ -25,7 +25,7 @@
         "info": {
             "org":"デジクリ",
             "org_url": "http://digicre.net",
-            "date": "2016/12(コミックマーケット91)",
+            "date": "2016/12",
             "description": "React+Cordovaによるアプリ開発"
         }
     }
