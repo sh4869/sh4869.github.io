@@ -86,11 +86,10 @@ html(lang='ja')
       .row.announcement
         .six.columns
           h2.minititle Contribution
-          table.ul-full-width
+          table.u-full-width
             thead
               tr
                 th Book Title
-                th Organization
                 th Date
                 th Content
             tbody
@@ -98,8 +97,6 @@ html(lang='ja')
                 tr
                   td
                     a(href=one.url)= one.title
-                  td
-                    a(href=one.info.org_url)= one.info.org
                   td= one.info.date
                   td= one.info.description
         .six.columns
@@ -122,11 +119,16 @@ html(lang='ja')
               i.fas.fa-sticky-note
               a(href="https://scrapbox.io/sh4869") Wiki (ScrapBox)
             p.with-icon
+              i.fas.fa-clone
+              a(href="http://sh4869.net/slides/") Slides
+            p.with-icon
               i.fas.fa-gift
               a(href="https://www.amazon.co.jp/registry/wishlist/PADZ1KX67KDC/ref=cm_sw_r_tw_ws_gZp5sb1FYPSRY") Withlist
         .six.columns
           h2.minititle Contact
           .content
+            p
+              | 依頼等はメールまでお願いします。
             p.with-icon
               i.fas.fa-envelope
               a(href="mailto:nobuk4869@gmail.com") nobuk4869@gmail.com
