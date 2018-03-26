@@ -26,6 +26,10 @@ table a {
   margin-left: 1em;
 }
 
+.description {
+  margin-left: 1em;
+}
+
 .description .item {
   display: block;
 }
@@ -38,19 +42,44 @@ table a {
   font-weight: 600;
   display: block;
   margin-bottom: 0.1em;
+  margin-top: 0.3em;
+}
+
+.description .item p.content {
+  display: inline;
 }
 
 .description .item .content {
   margin-left: 1em;
+}
+
+.description .item .content .aff-year {
+  margin-bottom: 0.1em;
+  margin-top: 0.3em;
+}
+
+.description .item .content .aff-content {
+  margin-left: 1em;
   display: inline;
 }
 
+.description .item .content .book-content {
+  display: inline;
+}
+
+.description .item .content .book-date {
+  display: inline;
+  margin-right: 1em;
+}
+
 p.with-icon {
+  display: inline-block;
   margin-bottom: 1em;
 }
 
 p.with-icon i {
   margin-right: 0.5em;
+  margin-left: 1em;
 }
 
 p.with-icon a {
