@@ -29,6 +29,7 @@ table {
 }
 
 .description {
+    margin-left: 1em;
     .item {
         display: block;
         a {
@@ -38,17 +39,37 @@ table {
             font-weight: 600;
             display: block;
             margin-bottom: 0.1em;
+            margin-top: 0.3em;
+        }
+        p.content {
+            display: inline;
         }
         .content {
             margin-left: 1em;
-            display: inline;
+            .aff-year {
+                margin-bottom: 0.1em;
+                margin-top: 0.3em;
+            }
+            .aff-content {
+                margin-left: 1em;
+                display: inline;
+            }
+            .book-content {
+                display: inline;
+            }
+            .book-date {
+                display: inline;
+                margin-right: 1em;
+            }
         }
     }
 }
 
 p.with-icon {
+    display: inline-block;
     i {
         margin-right: 0.5em;
+        margin-left: 1em;
     }
     a {
         color: inherit;

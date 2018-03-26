@@ -38,7 +38,7 @@ html(lang='ja')
           .description
             .item
               p.title Name
-              p.content Nobuhiro Kasai
+              p.content Nobuhiro Kasai,笠井信宏
             .item
               p.title Birthday
               p.content 1997/09/17
@@ -48,98 +48,86 @@ html(lang='ja')
             .item
               p.title Handle
               p.content sh4869,sh4869sh
+            .item
+              p.title Interested in
+              p.content Community, Programming, Language
+            .item
+              p.title Like
+              p.content Novel, Music
         .six.columns
-          h2.minititle Affiliation
-          table.u-full-width
-            thead
-              tr
-                th Year
-                th organization
-            tbody
-              tr
-                td 2016/04 - 
-                td Shibaura Institute of Technology
-              tr
-                td 2013/03 - 2016/03
-                td Tokyo Tech High School of Science and Technology
+          img.u-max-full-width(src="imgs/icon.png")
+        .twelve.columns
+          .description
+            .item
+              p.title Affiliation
+              .content
+                p.aff-year 2016/04
+                p.aff-content Shibaura Institute of Technology
+                p.aff-year 2013/03 - 2016/03
+                p.aff-content Tokyo Tech High School of Science and Technology
       .row.skills
-        .six.columns
-          h2.minititle Skill
-          .description
+        h2.minititle Skill
+        .description
+          .item
+            p.title Programming Language
+            p.content Dartlang,Go,Ruby,TypeScript
+          .item
+            p.title Genre
+            p.content Web Frontend,Robotics(a little),Web Design
+          .item
+            p.title Others
+            p.content Git,Linux,LaTeX
+      .row.skills
+        h2.minititle Works
+        .description
+          each work in data.works
             .item
-              p.title Programming Language
-              p.content C++,Dartlang,Go,Java,Ruby,TypeScript
-            .item
-              p.title Genre
-              p.content Web Frontend,Robotics(a little),Web Design
-            .item
-              p.title Others
-              p.content Git,Linux,LaTeX
-        .six.columns
-          h2.minititle Works
-          .description
-            each work in data.works
-              .item
-                a(href=work.url)
-                  p.title= work.title
-                p.content= work.description
+              a(href=work.url)
+                p.title= work.title
+              p.content= work.description
       .row.announcement
-        .six.columns
-          h2.minititle Contribution
-          table.u-full-width
-            thead
-              tr
-                th Book Title
-                th Date
-                th Content
-            tbody
-              each one in data.contribution
-                tr
-                  td
-                    a(href=one.url)= one.title
-                  td= one.info.date
-                  td= one.info.description
-        .six.columns
-          h2.minititle Presentation
-          p WIP
+        h2.minititle Contribution
+        .description
+          each one in data.contribution
+            .item
+              p.title
+                a(href=one.url)= one.title
+              .content
+                p.book-date #{one.info.date}
+                p.book-content= one.info.description
       .row.link
-        .six.columns
-          h2.minititle Link
-          .content
-            p.with-icon
-              i.fab.fa-github 
-              a(href="https://github.com/sh4869") GitHub
-            p.with-icon
-              i.fas.fa-rss 
-              a(href="https://blog.sh4869.net") Blog (Tech)
-            p.with-icon
-              i.fas.fa-rss-square
-              a(href="http://sh4869.hatenablog.com") Blog (Others)
-            p.with-icon
-              i.fas.fa-sticky-note
-              a(href="https://scrapbox.io/sh4869") Wiki (ScrapBox)
-            p.with-icon
-              i.fas.fa-clone
-              a(href="http://sh4869.net/slides/") Slides
-            p.with-icon
-              i.fas.fa-gift
-              a(href="https://www.amazon.co.jp/registry/wishlist/PADZ1KX67KDC/ref=cm_sw_r_tw_ws_gZp5sb1FYPSRY") Withlist
-        .six.columns
-          h2.minititle Contact
-          .content
-            p
-              | 依頼等はメールまでお願いします。
-            p.with-icon
-              i.fas.fa-envelope
-              a(href="mailto:nobuk4869@gmail.com") nobuk4869@gmail.com
-            p.with-icon
-              i.fab.fa-twitter
-              a(href="https://twitter.com/sh4869sh") @sh4869sh
-            p.with-icon
-              i.fab.fa-facebook
-              a(href="https://facebook.com/sh4869") Nobuhiro Kasai
-            
-            
-
+        h2.minititle Link
+        .content
+          p.with-icon
+            i.fab.fa-github 
+            a(href="https://github.com/sh4869") GitHub
+          p.with-icon
+            i.fas.fa-rss 
+            a(href="https://blog.sh4869.net") Blog (Tech)
+          p.with-icon
+            i.fas.fa-rss-square
+            a(href="http://sh4869.hatenablog.com") Blog (Others)
+          p.with-icon
+            i.fas.fa-sticky-note
+            a(href="https://scrapbox.io/sh4869") Wiki (ScrapBox)
+          p.with-icon
+            i.fas.fa-clone
+            a(href="http://sh4869.net/slides/") Slides
+          p.with-icon
+            i.fas.fa-gift
+            a(href="https://www.amazon.co.jp/registry/wishlist/PADZ1KX67KDC/ref=cm_sw_r_tw_ws_gZp5sb1FYPSRY") Withlist
+        h2.minititle Contact
+        .content
+          p
+            | 依頼等はメールまでお願いします。
+          p.with-icon
+            i.fas.fa-envelope
+            a(href="mailto:nobuk4869@gmail.com") nobuk4869@gmail.com
+          p.with-icon
+            i.fab.fa-twitter
+            a(href="https://twitter.com/sh4869sh") @sh4869sh
+          p.with-icon
+            i.fab.fa-facebook
+            a(href="https://facebook.com/sh4869") Nobuhiro Kasai
       .row.footer
         p &copy; 2018 sh4869,Nobuhiro Kasai All Rights Reserved
