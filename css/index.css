@@ -44,6 +44,12 @@ table a {
   margin-top: 0.3em;
 }
 
+.description .item .title-date {
+  display: block;
+  margin-bottom: 0.1em;
+  margin-top: 0.3em;
+}
+
 .description .item p.content {
   display: inline;
 }
@@ -55,6 +61,7 @@ table a {
 .description .item .content .aff-year {
   margin-bottom: 0.1em;
   margin-top: 0.3em;
+  font-weight: 500;
 }
 
 .description .item .content .aff-content {
@@ -66,8 +73,9 @@ table a {
   display: inline;
 }
 
-.description .item .content .book-date {
+.description .item .content .book-title {
   display: inline;
+  font-weight: 600;
   margin-right: 1em;
 }
 
