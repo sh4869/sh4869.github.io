@@ -57,44 +57,14 @@ html(lang='ja')
         .six.columns
           img.u-max-full-width(src="imgs/icon.png")
         .twelve.columns
+          h2.minititle Affiliation
           .description
             .item
-              p.title Affiliation
               .content
-                p.aff-year 2016/04
+                p.aff-year - 2016/04 ~
                 p.aff-content Shibaura Institute of Technology
-                p.aff-year 2013/03 - 2016/03
+                p.aff-year - 2013/03 ~ 2016/03
                 p.aff-content Tokyo Tech High School of Science and Technology
-      .row.skills
-        h2.minititle Skill
-        .description
-          .item
-            p.title Programming Language
-            p.content Dartlang,Go,Ruby,TypeScript
-          .item
-            p.title Genre
-            p.content Web Frontend,Robotics(a little),Web Design
-          .item
-            p.title Others
-            p.content Git,Linux,LaTeX
-      .row.skills
-        h2.minititle Works
-        .description
-          each work in data.works
-            .item
-              a(href=work.url)
-                p.title= work.title
-              p.content= work.description
-      .row.announcement
-        h2.minititle Contribution
-        .description
-          each one in data.contribution
-            .item
-              p.title
-                a(href=one.url)= one.title
-              .content
-                p.book-date #{one.info.date}
-                p.book-content= one.info.description
       .row.link
         h2.minititle Link
         .content
@@ -116,10 +86,41 @@ html(lang='ja')
           p.with-icon
             i.fas.fa-gift
             a(href="https://www.amazon.co.jp/registry/wishlist/PADZ1KX67KDC/ref=cm_sw_r_tw_ws_gZp5sb1FYPSRY") Withlist
+      .row.skills
+        h2.minititle Skill
+        .description
+          .item
+            p.title Programming Language
+            p.content Dartlang, Go, Ruby, TypeScript, C++
+          .item
+            p.title Genre
+            p.content Web Frontend(React),Micom(STM32),Web Design
+          .item
+            p.title Others
+            p.content Git, Linux, LaTeX
+      .row.skills
+        h2.minititle Works
+        .description
+          each work in data.works
+            .item
+              a(href=work.url)
+                p.title= work.title
+              p.content= work.description
+      .row.announcement
+        h2.minititle Contribution
+        .description
+          each one in data.contribution
+            .item
+              p.title-date= one.info.date
+              .content
+                a(href=one.url) 
+                  p.book-title #{one.title}
+                p.book-content= one.info.description
+      .row.link
         h2.minititle Contact
         .content
           p
-            | 依頼等はメールまでお願いします。
+            | 依頼等はメールまたはTwitter DMまでお願いします。
           p.with-icon
             i.fas.fa-envelope
             a(href="mailto:nobuk4869@gmail.com") nobuk4869@gmail.com

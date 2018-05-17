@@ -5,18 +5,13 @@
         "description": "Twitter API Library in Dart"
     },
     {
-        "title": "Shibaurasai App",
-        "url":"https://github.com/SIT-DigiCre/ShibaurasaiApp",
-        "description": "Navigation Application made with React and Cordova"
-    },
-    {
         "title":"J-REPO Web Page",
         "url":"http://j-repo.com",
-        "description":"J-REPO Web Page"
+        "description":"Japan Robotics Education Promotional Organization Official Web Page"
     },
     {
         "title":"C language Course",
         "url":"http://sh4869.net/CLangCourse/",
-        "description":"C Language Course"
+        "description":"Learning materials for C Language"
     }
 ]
