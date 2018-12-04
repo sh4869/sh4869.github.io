@@ -71,6 +71,8 @@ table a {
 
 .description .item .content .book-content {
   display: inline;
+  font-weight: 600;
+  margin-right: 1em;
 }
 
 .description .item .content .book-title {
