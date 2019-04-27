@@ -1,24 +1,28 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
 }
 
-h2.minititle {
+.part-title {
   font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.top {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.top h1 {
+  font-weight: 500;
 }
 
 table a {
   color: inherit;
 }
 
-.row {
-  margin-top: 2em;
-}
-
-@media (max-width: 550px) {
-  .row .columns:not(:first-child) {
-    margin-top: 1em;
-  }
+.row .columns {
+  margin-top: 1em;
 }
 
 .content {
@@ -30,11 +34,31 @@ table a {
 }
 
 .description .item {
-  display: block;
+  display: inline-block;
+  margin-right: 1em;
 }
 
 .description .item a {
   color: inherit;
+}
+
+.description .item .content .aff-year {
+  margin-bottom: 0.1em;
+  margin-top: 0.3em;
+  font-weight: 500;
+}
+
+.description .item .content .aff-content {
+  margin-left: 1em;
+  display: inline;
+}
+
+.description .item p.content {
+  display: inline;
+}
+
+.description .item .content {
+  margin-left: 1em;
 }
 
 .description .item .title {
@@ -58,29 +82,7 @@ table a {
   margin-left: 1em;
 }
 
-.description .item .content .aff-year {
-  margin-bottom: 0.1em;
-  margin-top: 0.3em;
-  font-weight: 500;
-}
-
-.description .item .content .aff-content {
-  margin-left: 1em;
-  display: inline;
-}
-
-.description .item .content .book-content {
-  display: inline;
-  font-weight: 600;
-  margin-right: 1em;
-}
-
-.description .item .content .book-title {
-  display: inline;
-  font-weight: 600;
-  margin-right: 1em;
-}
-
+/* ICON */
 p.with-icon {
   display: inline-block;
   margin-bottom: 1em;
@@ -100,15 +102,7 @@ p.with-icon a:hover {
   text-decoration: underline;
 }
 
-.top {
-  border-bottom: 1px solid black;
-  text-align: center;
-}
-
-.top h1 {
-  font-weight: 500;
-}
-
-.footer {
+/* COPY WRITE */
+.copywrite {
   text-align: center;
 }
