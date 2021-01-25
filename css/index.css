@@ -3,30 +3,38 @@ body {
   font-size: 1.7rem;
 }
 
+h1.top {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.description .item .content {
+  margin-left: 1em;
+}
+
+.description .item .title {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.1em;
+  margin-top: 0.3em;
+}
+
 .container {
   max-width: 800px;
 }
 
 .part-title {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   color: #333;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
-.top {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
 img {
   max-width: 100%;
   max-height: 100%;
-}
-
-h1.top {
-  font-weight: 500;
-  font-size: 2.7rem;
 }
 
 .row .columns {
@@ -53,7 +61,7 @@ h1.top {
 .description .item .content .aff-year {
   margin-bottom: 0.1em;
   margin-top: 0.3em;
-  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .description .item .content .aff-content {
@@ -63,17 +71,6 @@ h1.top {
 
 .description .item p.content {
   display: inline;
-}
-
-.description .item .content {
-  margin-left: 1em;
-}
-
-.description .item .title {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.1em;
-  margin-top: 0.3em;
 }
 
 .description .item .title-date {
