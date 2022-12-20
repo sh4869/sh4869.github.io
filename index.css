@@ -1,6 +1,6 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 h1.top {
@@ -87,7 +87,11 @@ img {
   margin-left: 1em;
 }
 
-/* ICON */
+.aff-content a {
+  color: inherit;
+}
+
+/* リスト表示など */
 p.with-icon {
   display: inline-block;
   margin-bottom: 1em;
@@ -110,4 +114,14 @@ p.with-icon a:hover {
 /* COPY WRITE */
 .copywrite {
   text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #202124;
+    color: #bdc1c6;
+  }
+  .part-title {
+    color: #bdc1c6;
+  }
 }
